@@ -1,0 +1,16 @@
+Red Dead Online
+The Hunter's Calculator
+
+When hunting it would be nice to know how much profit you were bringing home after
+a long trip.
+
+When the user makes a kill, they will press a button next to the animal icon of
+their kill, and it will tally that profit of that animal to a total.
+
+There will also be a running total of all animals in current hunting trip.
+
+Functions:
+  (Working) - User can press '-' or '+' to increment count of animals collected.
+  (Working) - User can type in count of animals collected.
+  Total estimated value will show up based on quality
+  Running Total value will show up based on all animals collected in hunt.

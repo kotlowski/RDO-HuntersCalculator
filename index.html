@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RDO-Hunter's Calculator</title>
+    <meta name="author" content="Ty Kotlowski">
+    <link rel="stylesheet" type="text/css" href="./master.css">
+  </head>
+  <body>
+    <!-- See RDO_HuntersCalculatorDoc.txt for Documentation-->
+    <div id="welcome">
+      <h1>Red Dead Online</h1>
+      <h3>The Hunter's Calculator</h3>
+      <p>How much profit are you rakin' in there partner?</p>
+    </div>
+    <br>
+    <div id="buckClass">
+      Buck
+        <div class="buckCtrl">
+          <button type="button" id="buckButtonSub" onclick="sub()">-</button>
+          <input id="buckAmount" type="text" value="0">
+          <button type="button" id="buckButtonAdd" onclick="add()">+</button>
+          <p id="buckTotalProfit" style="color:green"></p>
+        </div>
+    </div>
+    <script src="./calculator_ctrl.js"></script>
+  </body>
+</html>
