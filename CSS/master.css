@@ -1,0 +1,23 @@
+* {
+  text-align: center;
+}
+
+.columnLeft {
+  float: left;
+  width: 25%;
+  text-align: left;
+}
+
+
+.columnRight {
+  float: right;
+  width: 75%;
+  position: sticky;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

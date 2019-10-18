@@ -4,25 +4,59 @@
     <meta charset="utf-8">
     <title>RDO-Hunter's Calculator</title>
     <meta name="author" content="Ty Kotlowski">
-    <link rel="stylesheet" type="text/css" href="./master.css">
+    <link rel="stylesheet" type="text/css" href="CSS/master.css">
   </head>
   <body>
     <!-- See RDO_HuntersCalculatorDoc.txt for Documentation-->
     <div id="welcome">
       <h1>Red Dead Online</h1>
       <h3>The Hunter's Calculator</h3>
-      <p>How much profit are you rakin' in there partner?</p>
+      <p>How much money you rakin' in there partner?</p>
+      <br>
+      <small><i>Remember to only log *** level animals.</i></small>
     </div>
     <br>
-    <div id="buckClass">
-      Buck
-        <div class="buckCtrl">
-          <button type="button" id="buckButtonSub" onclick="sub()">-</button>
-          <input id="buckAmount" type="text" value="0">
-          <button type="button" id="buckButtonAdd" onclick="add()">+</button>
+    <div class="row">
+      <div class="columnLeft">
+        <div id="buckClass">
+          <h3>Buck</h3>
+          <button type="button" id="buckButtonSub" onclick="subBuck()">-</button>
+          <input id="buckNum" type="number" value="0" style="width:30px;">
+          <button type="button" id="buckButtonAdd" onclick="addBuck()">+</button>
           <p id="buckTotalProfit" style="color:green"></p>
         </div>
+        <div id="deerClass">
+          <h3>Deer</h3>
+          <button type="button" id="deerButtonSub" onclick="subDeer()">-</button>
+          <input id="deerNum" type="number" value="0" style="width:30px;">
+          <button type="button" id="deerButtonAdd" onclick="addDeer()">+</button>
+          <p id="deerTotalProfit" style="color:green"></p>
+        </div>
+        <div id="elkClass">
+          <h3>Elk</h3>
+          <button type="button" id="elkButtonSub" onclick="subElk()">-</button>
+          <input id="elkNum" type="number" value="0" style="width:30px;">
+          <button type="button" id="elkButtonAdd" onclick="addElk()">+</button>
+          <p id="elkTotalProfit" style="color:green"></p>
+        </div>
+        <div id="boarClass">
+          <h3>Boar</h3>
+          <button type="button" id="boarButtonSub" onclick="subBoar()">-</button>
+          <input id="boarNum" type="number" value="0" style="width:30px;">
+          <button type="button" id="boarButtonAdd" onclick="addBoar()">+</button>
+          <p id="boarTotalProfit" style="color:green"></p>
+        </div>
+      </div>
+      <div class="columnRight">
+        <h3>Price List</h3>
+        <img src="Static/RDO-Animal-Prices.jpg" alt="Animal Price Sheet 1" width="75%">
+        <br>
+        <img src="Static/RDO-Animal-Prices-2.jpg" alt="Animal Price Sheet 2" width="75%">
+        <br>
+        <img src="Static/RDO-Animal-Parts-Prices.jpg" alt="Animal Price Sheet 3" width="75%">
+      </div>
     </div>
-    <script src="./calculator_ctrl.js"></script>
+  <!-- JavaScript Resources -->
+  <script src="JS/calculator_ctrl.js"></script>
   </body>
 </html>
